@@ -1,0 +1,31 @@
+{
+  "name": "Vite-React-CRX",
+  "version": "0.10",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "./src_crx/service_worker.js"
+  },
+  "options_page": "./src_crx/options.html",
+  "permissions": ["scripting"],
+  "action": {
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "default_title": "Popup",
+    "default_popup": "./src_crx/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./src_crx/content_script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
