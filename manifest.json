@@ -6,7 +6,7 @@
     "service_worker": "./src_crx/service_worker.js"
   },
   "options_page": "./src_crx/options.html",
-  "permissions": ["scripting"],
+  "permissions": ["scripting", "storage"],
   "action": {
     "default_icon": {
       "16": "assets/icon16.png",
