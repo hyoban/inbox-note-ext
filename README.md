@@ -10,6 +10,8 @@
 
 或者前往 [release](https://github.com/hyoban/inbox-chrome-ext/releases) 界面下载 crx 文件拖入 chrome。
 
+你的浏览器内核版本需要 >= 88
+
 ## 如何使用
 
 ### 设置 api 链接
@@ -32,6 +34,11 @@
 <img width="394" alt="image" src="https://user-images.githubusercontent.com/38493346/158009460-bb985753-9c51-4d37-be1b-fa1412854a7e.png">
 
 输入完成后点击保存即可在手机 APP 中查看同步的笔记。
+
+
+## 小技巧
+
+输入框内支持加粗，列表等简单的 markdown 语法
 
 ## 关于
 
