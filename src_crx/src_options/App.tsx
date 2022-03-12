@@ -1,25 +1,10 @@
 import { useEffect, useState } from "react";
 
-import { base_url } from "../config";
-
 function onSaveButtonClick(token: string) {
   if (token === undefined || token.length === 0) {
     alert("请输入 token");
   } else {
-    fetch(base_url + token, {
-      method: "POST",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.code !== -4) {
-          saveToken(token);
-        } else {
-          alert(data.msg);
-        }
-      })
-      .catch((error) => {
-        alert(error);
-      });
+    saveToken(token);
   }
 }
 
