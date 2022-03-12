@@ -1,15 +1,13 @@
 import { useState } from "react";
 
-import { base_url } from "../config";
-
 function onSaveButtonClick(content: string) {
   chrome.storage.local.get(["token"], function (result) {
     if (content === undefined || content.length === 0) {
       alert("请输入有效内容");
     } else if (result.token === undefined) {
-      alert("请先在设置页面填入 token");
+      alert("请先在设置页面填入 API");
     } else {
-      fetch(base_url + result.token, {
+      fetch(result.token, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -21,7 +19,7 @@ function onSaveButtonClick(content: string) {
         .then((response) => response.json())
         .then((data) => {
           if (data.code === 0) {
-            alert("上传成功");
+            alert(data.msg);
             window.close();
           } else {
             alert(`上传失败，${data.msg}`);

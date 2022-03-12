@@ -4,7 +4,7 @@
 
 本项目是安卓软件 [inBox Note](https://gudong.web.cloudendpoint.cn/inbox/guide.html) 的浏览器插件，通过在插件中输入笔记，即可在 APP 启动时自动同步。
 
-## 如何使用
+## 如何安装
 
 鉴于目前 chrome 商店审核未通过，你可以通过自行下载解压的方式导入。
 
@@ -24,13 +24,18 @@
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/38493346/158009615-37e9474f-65c4-4e7f-a1ea-24071d00921d.png">
 
-### 设置 token
+## 如何使用
 
-在安装完成后，浏览器会跳出设置 token 的界面。
+### 设置 api 链接
 
-<img width="934" alt="image" src="https://user-images.githubusercontent.com/38493346/158009326-23f2e8dd-d5b9-436f-8ba2-0b0ad04f69f8.png">
+在安装完成后，浏览器会跳出设置 api 链接的界面。
 
-在此处填写你账号对应的 token，然后点击保存按键。
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/38493346/158016451-1e5c7ba2-7bb5-4bd9-8f56-19c45970d027.png">
+
+在此处填写你账号对应的 api 链接，然后点击保存按键。
+你可以打开安卓端的账户详情界面来复制 api 链接，粘贴到本地。
+
+![IMG_20220312_193731](https://user-images.githubusercontent.com/38493346/158016482-fc9698d9-d798-4789-b9d3-ff4304dd7750.jpg)
 
 ### 开始输入
 

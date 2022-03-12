@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function onSaveButtonClick(token: string) {
   if (token === undefined || token.length === 0) {
-    alert("请输入 token");
+    alert("请输入 API 链接");
   } else {
     saveToken(token);
   }
@@ -10,7 +10,7 @@ function onSaveButtonClick(token: string) {
 
 function saveToken(token: string) {
   chrome.storage.local.set({ token }, function () {
-    alert("token 已被保存");
+    alert("API 已被保存");
   });
 }
 
@@ -29,10 +29,10 @@ function App() {
         <h2 className="text-2xl text-gray-900">账户设置</h2>
         <div className="w-full md:w-full px-3 mb-6 mt-6 border-t border-gray-400 pt-4">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-            token
+            API
           </label>
           <p className="block tracking-wide text-gray-700 text-xs mb-2">
-            请参考文档设置 token，以保证插件工作正常。
+            请参考文档设置 api 链接，以保证插件工作正常。
           </p>
           <input
             className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500"
