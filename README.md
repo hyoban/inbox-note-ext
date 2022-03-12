@@ -6,23 +6,9 @@
 
 ## 如何安装
 
-鉴于目前 chrome 商店审核未通过，你可以通过自行下载解压的方式导入。
+请访问 [chrome 插件主页](https://chrome.google.com/webstore/detail/inbox-note/oohnohniochgefahfjehkdhgkgaokjai)，以添加到 chrome。
 
-### 下载
-
-访问 [release](https://github.com/hyoban/inbox-chrome-ext/releases) 界面下载 inbox-chrome-ext-xxx.zip 压缩包并解压。
-
-### 启用浏览器插件开发者模式
-
-访问 [扩展程序](chrome://extensions/) 界面，右上角启用开发者模式。
-
-<img width="1313" alt="image" src="https://user-images.githubusercontent.com/38493346/158009203-c1d0e753-0846-4a3d-9812-f56363d68d95.png">
-
-### 加载插件
-
-点击左上角`加载已解压的扩展程序`，选择目录为此前压缩包解压出的文件夹。
-
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/38493346/158009615-37e9474f-65c4-4e7f-a1ea-24071d00921d.png">
+或者前往 [release](https://github.com/hyoban/inbox-chrome-ext/releases) 界面下载 crx 文件拖入 chrome。
 
 ## 如何使用
 
