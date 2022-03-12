@@ -13,7 +13,7 @@ function App() {
       <textarea
         id="content"
         rows={10}
-        placeholder="请输入 markdown 格式笔记"
+        placeholder="请在此输入笔记"
         className="mb-3 appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500"
         value={content}
         onChange={(e) => {
@@ -38,10 +38,13 @@ function App() {
               .then((data) => {
                 if (data.msg === "已提交") {
                   alert("上传成功");
+                  window.close();
+                } else {
+                  alert("上传失败，请检查 token 设置和网络");
                 }
               })
               .catch((error) => {
-                console.error("Error:", error);
+                alert(error);
               });
           });
         }}
