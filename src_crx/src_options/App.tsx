@@ -17,12 +17,15 @@ function App() {
 
   return (
     <div className="bg-gray-200 min-h-screen pt-2">
-      <div className="container mx-auto inputs w-full max-w-2xl p-6 mx-auto">
+      <div className="container mx-auto inputs w-full max-w-2xl p-6">
         <h2 className="text-2xl text-gray-900">账户设置</h2>
         <div className="w-full md:w-full px-3 mb-6 mt-6 border-t border-gray-400 pt-4">
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
             token
           </label>
+          <p className="block tracking-wide text-gray-700 text-xs mb-2">
+            请参考文档设置 token，以保证插件工作正常。
+          </p>
           <input
             className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500"
             type="text"
@@ -37,7 +40,11 @@ function App() {
             className="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3"
             type="submit"
             onClick={() => {
-              saveToken(token);
+              if (token.length === 0) {
+                alert("请输入 token");
+              } else {
+                saveToken(token);
+              }
             }}
           >
             保存
