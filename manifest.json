@@ -1,6 +1,6 @@
 {
   "name": "inBox Note",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "./src_crx/service_worker.js"
