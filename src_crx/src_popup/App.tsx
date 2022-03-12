@@ -1,6 +1,38 @@
 import { useState } from "react";
 
-const base_url = "http://qcbzf9.app.cloudendpoint.cn/api/inbox/";
+import { base_url } from "../config";
+
+function onSaveButtonClick(content: string) {
+  chrome.storage.local.get(["token"], function (result) {
+    if (content === undefined || content.length === 0) {
+      alert("请输入有效内容");
+    } else if (result.token === undefined) {
+      alert("请先在设置页面填入 token");
+    } else {
+      fetch(base_url + result.token, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          content,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.code === 0) {
+            alert("上传成功");
+            window.close();
+          } else {
+            alert(`上传失败，${data.msg}`);
+          }
+        })
+        .catch((error) => {
+          alert(error);
+        });
+    }
+  });
+}
 
 function App() {
   const [content, setContent] = useState("");
@@ -24,29 +56,7 @@ function App() {
         type="submit"
         className="self-end mr-2 w-24 py-2 px-4 appearance-none bg-gray-200 text-gray-900 shadow-sm border border-gray-400 rounded-md"
         onClick={() => {
-          chrome.storage.local.get(["token"], function (result) {
-            fetch(base_url + result.token, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                content,
-              }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                if (data.msg === "已提交") {
-                  alert("上传成功");
-                  window.close();
-                } else {
-                  alert("上传失败，请检查 token 设置和网络");
-                }
-              })
-              .catch((error) => {
-                alert(error);
-              });
-          });
+          onSaveButtonClick(content);
         }}
       >
         发送

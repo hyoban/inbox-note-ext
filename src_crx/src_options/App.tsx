@@ -1,5 +1,28 @@
 import { useEffect, useState } from "react";
 
+import { base_url } from "../config";
+
+function onSaveButtonClick(token: string) {
+  if (token === undefined || token.length === 0) {
+    alert("请输入 token");
+  } else {
+    fetch(base_url + token, {
+      method: "POST",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.code !== -4) {
+          saveToken(token);
+        } else {
+          alert(data.msg);
+        }
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  }
+}
+
 function saveToken(token: string) {
   chrome.storage.local.set({ token }, function () {
     alert("token 已被保存");
@@ -40,11 +63,7 @@ function App() {
             className="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3"
             type="submit"
             onClick={() => {
-              if (token.length === 0) {
-                alert("请输入 token");
-              } else {
-                saveToken(token);
-              }
+              onSaveButtonClick(token);
             }}
           >
             保存
