@@ -22,6 +22,8 @@
 
 点击左上角`加载已解压的扩展程序`，选择目录为此前压缩包解压出的文件夹。
 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/38493346/158009615-37e9474f-65c4-4e7f-a1ea-24071d00921d.png">
+
 ### 设置 token
 
 在安装完成后，浏览器会跳出设置 token 的界面。
