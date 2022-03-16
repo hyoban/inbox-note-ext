@@ -1,13 +1,14 @@
 {
   "name": "inBox Note",
-  "version": "0.0.2",
-  "manifest_version": 3,
+  "version": "0.0.3",
+  "description": "安卓软件 inBox Note 的辅助插件，帮助你快速的在浏览器中记录笔记。",
+  "manifest_version": 2,
   "background": {
     "service_worker": "./src_crx/service_worker.js"
   },
   "options_page": "./src_crx/options.html",
   "permissions": ["storage"],
-  "action": {
+  "browser_action": {
     "default_icon": {
       "16": "assets/icon16.png",
       "32": "assets/icon32.png",
@@ -21,11 +22,5 @@
     "32": "assets/icon32.png",
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["*"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
