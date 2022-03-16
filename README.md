@@ -10,7 +10,9 @@
 
 ## 如何安装
 
-请访问 [chrome 插件主页](https://chrome.google.com/webstore/detail/inbox-note/oohnohniochgefahfjehkdhgkgaokjai)，以添加到 chrome。
+请访问 [chrome 插件商店](https://chrome.google.com/webstore/detail/inbox-note/oohnohniochgefahfjehkdhgkgaokjai)，以添加到浏览器。
+
+或是 [edge 插件商店](https://microsoftedge.microsoft.com/addons/detail/inbox-note/ofniifjgpfldljgklioconjapbmndaid)。
 
 或者前往 [release](https://github.com/hyoban/inbox-chrome-ext/releases) 界面下载 crx 文件拖入浏览器插件页。
 
