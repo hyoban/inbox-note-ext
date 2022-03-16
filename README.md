@@ -1,4 +1,4 @@
-# inBox Note Chrome
+# inBox Note 浏览器插件
 
 ## 介绍
 
