@@ -8,6 +8,8 @@
 
 通过该插件，可以让自己在使用电脑时也能快速记录自己的想法，只需要打开浏览器插件，即可完成灵感的记录。
 
+> Note:目前 API 功能处于测试状态，要想在 APP 中正常同步 API 生成的笔记，需要联系开发者加白名单。如何联系作者？在 app 关于页面可以找到他的联系方式。
+
 ## 如何安装
 
 请访问 [chrome 插件商店](https://chrome.google.com/webstore/detail/inbox-note/oohnohniochgefahfjehkdhgkgaokjai)，以添加到浏览器。
@@ -20,7 +22,9 @@
 
 ### 准备
 
-- 安装 inBox App [酷安下载](https://www.coolapk.com/apk/name.gudong.think)
+- 安装 inBox App 
+  - [fir下载](http://d.maps9.com/dx2f) 
+  - [酷安(暂时已下架)](https://www.coolapk.com/apk/name.gudong.think)
 - 在应用内注册账号
 - 打开账户详情页，获取自己账号的独有 API 地址，如下所示：
 
@@ -40,7 +44,6 @@
 
 只要保存完毕，此时打开 inBox 笔记，只要做一次前后台切换，笔记就会自动添加到 app 的笔记列表中。
 
-> ps：该功能目前作者尚在测试阶段，如果需要在 app 中接受笔记信息，需要找作者加白名单，提供自己的账号即可。如何联系作者？在 app 关于页面可以找到他的联系方式。
 
 ps：你可以将其固定，以便于快速打开，如下所示，点击置顶。
 
