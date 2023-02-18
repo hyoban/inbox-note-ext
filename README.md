@@ -4,11 +4,9 @@
 
 本项目是安卓软件 [inBox 笔记](https://www.coolapk.com/apk/name.gudong.think) 的浏览器插件。
 
-> inBox 笔记是一个离线的 Android 卡片笔记软件，帮助你快速记录灵感、记录想法，inBox 的最大特点是离线，支持 WebDav，自由的数据导入导出。
+> inBox 笔记是一个离线的 Android 卡片笔记软件，帮助你快速记录灵感、记录想法，inBox 的最大特点是离线，支持 WebDav，自由的数据导入导出以及 双向链接。
 
 通过该插件，可以让自己在使用电脑时也能快速记录自己的想法，只需要打开浏览器插件，即可完成灵感的记录。
-
-> Note:目前 API 功能处于测试状态，要想在 APP 中正常同步 API 生成的笔记，需要联系开发者加白名单。如何联系作者？在 app 关于页面可以找到他的联系方式。
 
 ## 如何安装
 
@@ -23,8 +21,9 @@
 ### 准备
 
 - 安装 inBox App 
-  - [fir下载](http://d.maps9.com/dx2f) 
-  - [酷安(暂时已下架)](https://www.coolapk.com/apk/name.gudong.think)
+  - [酷安](https://www.coolapk.com/apk/name.gudong.think)
+  - [fir下载](http://fir.gudong.site/dx2f) 
+
 - 在应用内注册账号
 - 打开账户详情页，获取自己账号的独有 API 地址，如下所示：
 
